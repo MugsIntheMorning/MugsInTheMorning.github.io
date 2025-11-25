@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mugs in the Morning | Wake up in style.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mugs in the Morning – thrifted and curated coffee mugs with personality. Wake up in style with unique mugs sourced from thrift stores and Goodwill.">
+  <style>
+    :root {
+      --bg: #faf4ea;
+      --accent: #f7a93a;
+      --accent-dark: #c77412;
+      --text-main: #3b2a1a;
+      --text-muted: #7a6654;
+      --card-bg: #ffffff;
+      --border-soft: #e4d6c5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+
+    header img {
+      max-width: 260px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    header h1 {
+      margin: 0.25rem 0 0;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    header p.tagline {
+      margin: 0.25rem 0 0;
+      font-style: italic;
+      color: var(--text-muted);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 1rem 1.5rem 2.5rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      margin-top: 0;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--accent);
+      color: #3b2610;
+      padding: 0.8rem 1.8rem;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h3.section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border-soft);
+      display: inline-block;
+      padding-bottom: 0.35rem;
+    }
+
+    .about {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid var(--border-soft);
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .mug-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      border: 1px solid var(--border-soft);
+      padding: 0.9rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    }
+
+    .mug-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .email-box {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border-soft);
+      padding: 1.4rem;
+      max-width: 520px;
+    }
+
+    .email-box form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .email-box input[type="email"] {
+      flex: 1 1 180px;
+      padding: 0.7rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      font-size: 0.95rem;
+    }
+
+    .email-box button {
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1.5rem 1rem 2rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- This file name should match the logo file you uploaded -->
+    <img src="logo-mugs-in-the-morning.png" alt="Mugs in the Morning logo">
+    <h1>Mugs in the Morning</h1>
+    <p class="tagline">Wake up in style.</p>
+  </header>
+
+  <section class="hero">
+    <h2>Thrifted mugs with personality.</h2>
+    <p>
+      I hunt thrift stores, Goodwill shelves, and local spots to find unique mugs
+      that feel like an extension of who you are. Start your day with something
+      that makes you smile.
+    </p>
+    <a class="btn-primary" href="https://ebay.us/m/KSS7u5" target="_blank" rel="noopener">
+      Shop My eBay Store
+    </a>
+  </section>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <h3 class="section-title">About Mugs in the Morning</h3>
+      <p>
+        Hi! I’m the mug-obsessed thrifter behind <strong>Mugs in the Morning</strong>.
+        I’ve always believed that the mug you reach for in the morning says something
+        about you — your style, your mood, your sense of humor.
+      </p>
+      <p>
+        Every week I visit thrift stores and Goodwill to rescue standout mugs:
+        bold graphics, vintage logos, quirky sayings, classy stoneware, and
+        everything in between. I clean them up, photograph them, and list them so
+        they can find a new home in your cupboard.
+      </p>
+      <p>
+        Whether you’re a collector or just looking for “that one perfect mug,”
+        I’m here to help you wake up in style.
+      </p>
+    </section>
+
+    <!-- FEATURED MUGS (you can update images/links later) -->
+    <section>
+      <h3 class="section-title">Featured Finds</h3>
+      <p>A few recent favorites from my eBay shop.</p>
+
+      <div class="featured-grid">
+        <div class="mug-card">
+          <a href="https://ebay.us/m/KSS7u5" target="_blank" rel="noopener">
+            <img src="FEATURED_MUG_IMAGE_URL_1" alt="Featured mug 1">
+            <h4>Recent Find #1</h4>
+          </a>
+        </div>
+        <div class="mug-card">
+          <a href="https://ebay.us/m/KSS7u5" target="_blank" rel="noopener">
+            <img src="FEATURED_MUG_IMAGE_URL_2" alt="Featured mug 2">
+            <h4>Recent Find #2</h4>
+          </a>
+        </div>
+        <div class="mug-card">
+          <a href="https://ebay.us/m/KSS7u5" target="_blank" rel="noopener">
+            <img src="FEATURED_MUG_IMAGE_URL_3" alt="Featured mug 3">
+            <h4>Recent Find #3</h4>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMAIL SIGNUP (placeholder for later) -->
+    <section>
+      <h3 class="section-title">Join the Mug Club</h3>
+      <div class="email-box">
+        <p>Get updates when I list especially cool mugs, plus behind-the-scenes thrift finds.</p>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button class="btn-primary" type="submit">Join the Mug Club</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="year"></span> Mugs in the Morning · Wake up in style.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
