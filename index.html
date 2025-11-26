@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script defer data-domain="mugsinthemorning.com" src="https://plausible.io/js/script.js"></script>
-
 <head>
   <meta charset="UTF-8">
   <title>Mugs in the Morning | Wake up in style.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mugs in the Morning – thrifted and curated coffee mugs with personality. Wake up in style with unique mugs sourced from thrift stores and Goodwill.">
+  <script defer data-domain="mugsinthemorning.com" src="https://plausible.io/js/script.js"></script>
   <style>
     :root {
       --bg: #faf4ea;
@@ -133,6 +132,12 @@
       padding: 0.9rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .mug-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.06);
     }
 
     .mug-card img {
@@ -166,6 +171,22 @@
 
     .email-box button {
       cursor: pointer;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: var(--card-bg);
+      font-size: 0.9rem;
     }
 
     footer {
@@ -219,10 +240,7 @@
       </p>
     </section>
 
-
-    <!-- FEATURED MUGS (you can update images/links later) -->
-    <section>
-         <!-- FEATURED MUGS -->
+    <!-- FEATURED MUGS -->
     <section>
       <h3 class="section-title">Featured Finds</h3>
       <p>A few recent favorites from my eBay shop. Click any mug to see more photos and details.</p>
@@ -231,9 +249,7 @@
 
         <!-- Featured Mug 1 -->
         <div class="mug-card">
-          <!-- Replace THIS URL with the actual eBay link for your Le Creuset mug -->
           <a href="https://ebay.us/m/mk2klW" target="_blank" rel="noopener">
-            <!-- Replace file name if you used something different -->
             <img src="LeCreuset.webp" alt="Le Creuset stoneware mug">
             <h4>Le Creuset 14 oz Stoneware Mug</h4>
             <p>Classic gray ombré, cozy and durable.</p>
@@ -242,7 +258,6 @@
 
         <!-- Featured Mug 2 -->
         <div class="mug-card">
-          <!-- Replace THIS URL with the eBay link for your Starbucks poinsettia mug -->
           <a href="https://ebay.us/m/V1HX6y" target="_blank" rel="noopener">
             <img src="Starbucks.webp" alt="Starbucks poinsettia coffee mug">
             <h4>Starbucks Poinsettia 26 oz Mug</h4>
@@ -252,7 +267,6 @@
 
         <!-- Featured Mug 3 -->
         <div class="mug-card">
-          <!-- Replace THIS URL with the eBay link for your Home Depot 2013 mug -->
           <a href="https://ebay.us/m/LHmu83" target="_blank" rel="noopener">
             <img src="HomeDepot.webp" alt="Home Depot 2013 Mr. Christmas mug">
             <h4>Home Depot 2013 Christmas Mug</h4>
@@ -263,20 +277,46 @@
       </div>
     </section>
 
-
-    <!-- EMAIL SIGNUP (placeholder for later) -->
+    <!-- EMAIL SIGNUP -->
     <section>
       <h3 class="section-title">Join the Mug Club</h3>
       <div class="email-box">
         <p>Get updates when I list especially cool mugs, plus behind-the-scenes thrift finds.</p>
-       <form action="https://formsubmit.co/MugsInTheMorning1@gmail.com" method="POST">
-  <!-- optional: set a subject line for the email you receive -->
-  <input type="hidden" name="_subject" value="New Mug Club signup from MugsInTheMorning.com">
+        <form action="https://formsubmit.co/MugsInTheMorning1@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Mug Club signup from MugsInTheMorning.com">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button class="btn-primary" type="submit">Join the Mug Club</button>
+        </form>
+      </div>
+    </section>
 
-  <input type="email" name="email" placeholder="Enter your email" required>
-  <button class="btn-primary" type="submit">Join the Mug Club</button>
-</form>
+    <!-- SOCIAL LINKS SECTION -->
+    <section>
+      <h3 class="section-title">Follow Mugs in the Morning</h3>
+      <p style="margin-bottom: 1rem;">
+        See new mugs, thrift hauls, and behind-the-scenes sourcing.
+      </p>
 
+      <div class="social-links">
+        <a href="https://instagram.com/mugsinthemorning1" target="_blank" rel="noopener">
+          Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/@mugsinthemorning3" target="_blank" rel="noopener">
+          TikTok
+        </a>
+
+        <a href="https://facebook.com/MugsInTheMorning" target="_blank" rel="noopener">
+          Facebook
+        </a>
+
+        <a href="https://x.com/MugsInMorning" target="_blank" rel="noopener">
+          X (Twitter)
+        </a>
+
+        <a href="https://youtube.com/@MugsInTheMorning" target="_blank" rel="noopener">
+          YouTube
+        </a>
       </div>
     </section>
 
